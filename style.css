@@ -1,30 +1,52 @@
-body {
-  background-color: #73bfbf;
+html {
   height: 100%;
-  width: 100%;
+}
+body {
+  background-color: #73bfff;
+  height: 100%;
+  height: 100%;
 }
 
 header {
   width: 80%;
   height: 80%;
-  border: dashed;
-}
-
-nav {
+  margin-left: auto;
+  margin-right: auto;
   background-color: #d3d3d3;
   box-shadow: 10px 10px;
-  width: 95%;
-  height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-ul {
+h1 {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  width: 95%;
+  height: 70%;
   border: solid;
-  border-width: 2px;
-  width: 88%;
+  border-width: 3px;
   margin-left: auto;
   margin-right: auto;
   border-top-color: #fff;
   border-left-color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li:hover {
+  background-color: #b3b3ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.red {
+  color: #f00;
 }
