@@ -1,6 +1,13 @@
+@font-face {
+  font-family: CalsaleTwo;
+  src: url('fonts/CASTWO1.ttf') format('truetype');;
+}
+
 html {
   height: 100%;
+  font-family: 'CalsaleTwo';
 }
+
 body {
   background-color: #73bfff;
   height: 100%;
@@ -9,17 +16,18 @@ body {
 
 header {
   width: 80%;
-  height: 80%;
+  margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   background-color: #d3d3d3;
-  box-shadow: 10px 10px;
+  box-shadow: 20px 20px;
   margin-left: auto;
   margin-right: auto;
+  padding: 5px 5px 5px 5px;
 }
 
 h1 {
-  font-size: 100%;
+  font-size: 200%;
   width: 95%;
   margin-left: auto;
   margin-right: auto;
@@ -27,13 +35,13 @@ h1 {
 
 nav {
   width: 95%;
-  height: 70%;
+  height: auto;
   border: solid;
-  border-width: 3px;
+  border-width: 5px;
   margin-left: auto;
   margin-right: auto;
-  border-top-color: #fff;
-  border-left-color: #fff;
+  border-bottom-color: #fff;
+  border-right-color: #fff;
   padding: 0px;
 }
 
@@ -45,21 +53,55 @@ ul {
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
+  font-size: 200%;
 }
 
 li {
 }
 
 li:hover {
-  background-color: #b3b3ff;
 }
 
 li:hover a {
+  background-color: #b3b3ff;
   color: #fff;
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  border: none;
+  font-size: 200%;
+  color: #000;
+  background-color: #d3d3d3; 
+  font-family: 'CalsaleTwo';
+}
+
+button:hover {
+  background-color: #b3b3ff;
+  font-size: 200%;
+  color: #fff;
+}
+
+.curses-window {
+  width: auto;
+  height: 98%;
+  border: solid;
+  border-width: 5px;
+  border-top-color: #fff;
+  border-left-color: #fff;
+}
+
+.button-containter {
+  margin-top: 10px;
+  border-top: solid;
+  border-width: 5px;
+  border-top-color: #fff;
+  padding-left: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .red {
