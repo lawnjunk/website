@@ -5,9 +5,6 @@ var app = {};
 app.backButton = document.getElementsByClassName('back-button')[0];
 app.okButton = document.getElementsByClassName('ok-button')[0]; 
 app.homeButton = document.getElementsByClassName('home-button')[0]; 
-app.backReference = {
-  prjects: '/'
-};
 
 console.log('window', window);
 
@@ -27,7 +24,7 @@ window.addEventListener('load', function(){
     });
   }
 
-  if (!!app.backButton){
+  if (!!app.homeButton){
     app.backButton.addEventListener('click', function(){
       window.location.href = '/';
     });
