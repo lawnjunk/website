@@ -1,0 +1,30 @@
+body {
+  background-color: #73bfbf;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  width: 80%;
+  height: 80%;
+  border: dashed;
+}
+
+nav {
+  background-color: #d3d3d3;
+  box-shadow: 10px 10px;
+  width: 95%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  border: solid;
+  border-width: 2px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-color: #fff;
+  border-left-color: #fff;
+}
