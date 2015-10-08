@@ -1,0 +1,19 @@
+body {
+  background-color: #73bfbf;
+}
+
+nav {
+  background-color: #d3d3d3;
+  box-shadow: 10px 10px;
+  width: 300px;
+  width: 300px;
+}
+
+@media only screen and (max-device-width: 480px){
+  nav {
+    background-color: #d3d3d3;
+    box-shadow: 10px 10px;
+    width: 80%;
+    width: 80%;
+  }
+}
