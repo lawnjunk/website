@@ -25,7 +25,7 @@ window.addEventListener('load', function(){
   }
 
   if (!!app.homeButton){
-    app.backButton.addEventListener('click', function(){
+    app.homeButton.addEventListener('click', function(){
       window.location.href = '/';
     });
   }
