@@ -14,6 +14,10 @@ body {
   height: 100%;
 }
 
+footer {
+  margin-top: 40px;
+}
+
 footer ul {
   width: 128px;
   margin-left: auto;
@@ -23,6 +27,7 @@ footer ul {
 footer ul li {
   margin-left: 20px;
   float: left;
+  list-style-type: none;
 }
 
 a {
