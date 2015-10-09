@@ -14,7 +14,22 @@ body {
   height: 100%;
 }
 
-header {
+footer ul {
+  width: 128px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer ul li {
+  margin-left: 20px;
+  float: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+.curses-window-container {
   width: 60%;
   margin-top: 5%;
   margin-left: auto;
@@ -26,14 +41,23 @@ header {
   padding: 5px 5px 5px 5px;
 }
 
-h1 {
+.curses-window {
+  width: auto;
+  height: 98%;
+  border: solid;
+  border-width: 5px;
+  border-top-color: #fff;
+  border-left-color: #fff;
+}
+
+.cw-header-container h1 {
   font-size: 200%;
   width: 95%;
   margin-left: auto;
   margin-right: auto;
 }
 
-nav {
+.cw-main-container {
   width: 95%;
   height: auto;
   border: solid;
@@ -45,7 +69,18 @@ nav {
   padding: 0px;
 }
 
-ul {
+.cw-button-container {
+  margin-top: 10px;
+  border-top: solid;
+  border-width: 5px;
+  border-top-color: #fff;
+  padding-left: 5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.cw-main-container ul {
   position: relative;
   list-style-type: none;
   width: 100%;
@@ -56,26 +91,17 @@ ul {
   font-size: 200%;
 }
 
-ul ul li {
+.cw-main-container ul ul li {
   font-size: 25%;
 }
 
-li {
-}
-
-li:hover {
-}
-
-li:hover a {
+.cw-main-container li:hover a {
   background-color: #b3b3ff;
   color: #fff;
 }
 
-a {
-  text-decoration: none;
-}
 
-button {
+.cw-button-container button {
   border: none;
   font-size: 200%;
   color: #000;
@@ -83,32 +109,10 @@ button {
   font-family: 'CalsaleTwo';
 }
 
-button:hover {
+.cw-button-container button:hover {
   background-color: #b3b3ff;
   font-size: 200%;
   color: #fff;
-}
-
-.back-button {
-}
-
-.curses-window {
-  width: auto;
-  height: 98%;
-  border: solid;
-  border-width: 5px;
-  border-top-color: #fff;
-  border-left-color: #fff;
-}
-
-.button-containter {
-  margin-top: 10px;
-  border-top: solid;
-  border-width: 5px;
-  border-top-color: #fff;
-  padding-left: 5%;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .red {
@@ -118,15 +122,4 @@ button:hover {
 .selected a {
   background-color: #b3b3ff;
   color: #fff;
-}
-
-footer ul {
-  width: 128px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-footer ul li {
-  margin-left: 20px;
-  float: left;
 }
