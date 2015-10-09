@@ -1,6 +1,6 @@
 @font-face {
   font-family: CalsaleTwo;
-  src: url('fonts/CASTWO1.ttf') format('truetype');;
+  src: url('/fonts/CASTWO1.ttf') format('truetype');;
 }
 
 html {
@@ -113,4 +113,20 @@ button:hover {
 
 .red {
   color: #f00;
+}
+
+.selected a {
+  background-color: #b3b3ff;
+  color: #fff;
+}
+
+footer ul {
+  width: 128px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer ul li {
+  margin-left: 20px;
+  float: left;
 }
