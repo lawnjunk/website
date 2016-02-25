@@ -1,0 +1,27 @@
+{
+  "name": "slugbyte.github.io",
+  "version": "0.1.0",
+  "description": "'ma website'",
+  "main": "-NONE-",
+  "scripts": {
+    "test": "-NONE-"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slugbyte/slugbyte.github.io.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "slugbyte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slugbyte/slugbyte.github.io/issues"
+  },
+  "homepage": "https://github.com/slugbyte/slugbyte.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "jquery": "^2.2.1",
+    "lodash": "^4.5.1"
+  }
+}
