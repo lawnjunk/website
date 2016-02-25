@@ -17,6 +17,13 @@ gulp.task('webpack', function(done){
 });
 
 
+gulp.task('copy', function(){
+  gulp.src('src/html/index.html').pipe(gulp.dest(__dirname + '/build'));
+});
+
+
+gulp.task('build', ['copy', 'webpack']);
+
 gulp.task('serve', function(){
   browserSync.init({
     server: {
@@ -24,14 +31,14 @@ gulp.task('serve', function(){
     }
   });
 
-  gulp.watch(paths.client, ['webpack']).on('change', function(){
+  gulp.watch(paths.client, ['build']).on('change', function(){
     browserSync.reload();
   });
 });
 
 
 gulp.task('watch', function(){
-  gulp.watch(paths.client, ['webpack']);
+  gulp.watch(paths.client, ['build']);
 });
 
 
