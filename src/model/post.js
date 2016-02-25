@@ -10,8 +10,8 @@ module.exports = function Article(name, htmlId, text){
     headingEL.textContent = this.name;
     var textEl  = document.createElement('p');
     textEl.textContent = this.text;
-    articleEL.appendElement(headingEL);
-    articleEL.appendElement(textEl);
+    articleEL.appendChild(headingEL);
+    articleEL.appendChild(textEl);
     return articleEL;
   }
 }
