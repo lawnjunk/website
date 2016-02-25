@@ -42,46 +42,10 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var Article = __webpack_require__(1);
-
-	//$('body').html('sup slug?')
-	//console.log('hows it going', Article);
-	var art1 = new  Article('how is this working', 'how_works', 'thisi is my random text content').genorateDisplay();
-
-	//document.body.appendElement(art1);
-
-	console.log('lulwat sluuuuuug');
-	document.body.textContent = "lulwat lulwat sflkjdsf";
-	var x = document.createElement('h1')
-	x.textContent = 'ffffffuuuuuksldjfsk yeah'
-	x.style.color = 1000;
-	document.body.appendChild(x);
-	document.body.appendChild(art1);
-
-
-/***/ },
-/* 1 */
 /***/ function(module, exports) {
 
-	module.exports = function Article(name, htmlId, text){
-	  this.name = name;
-	  this.htmlId = htmlId;
-	  this.text = text;
+	'use strict';
 
-	  this.genorateDisplay = function(){
-	    var articleEL = document.createElement('div');
-	    articleEL.setAttribute('id', this.htmlId);
-	    var headingEL = document.createElement('h1');
-	    headingEL.textContent = this.name;
-	    var textEl  = document.createElement('p');
-	    textEl.textContent = this.text;
-	    articleEL.appendChild(headingEL);
-	    articleEL.appendChild(textEl);
-	    return articleEL;
-	  }
-	}
 
 
 /***/ }

@@ -7,12 +7,12 @@ var paths = {
   client: ['src/js/**/*.js', 'src/html/**/*.html', 'src/css/**/*.css']
 };
 
-var webpackConfig = require('./webpack.config.js');
+var webpackConfig = require(__dirname + '/webpack.config.js');
+
 gulp.task('webpack', function(done){  
-  gulp.src(__dirname + '/src/client.js')
+  gulp.src(__dirname + '/src/js/client.js')
     .pipe(webpack(webpackConfig))
     .pipe(gulp.dest('build/'))
-    util.log('whattt the fuck');
     done();
 });
 
