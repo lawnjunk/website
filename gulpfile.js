@@ -18,7 +18,7 @@ gulp.task('webpack', function(done){
 
 
 gulp.task('copy', function(){
-  gulp.src('src/html/index.html').pipe(gulp.dest(__dirname + '/build'));
+  gulp.src(__dirname + '/src/html/index.html').pipe(gulp.dest(__dirname + '/build'));
 });
 
 
