@@ -9,7 +9,7 @@ var paths = {
 
 var webpackConfig = require('./webpack.config.js');
 gulp.task('webpack', function(done){  
-  gulp.src(__dirname + '/src/index.js')
+  gulp.src(__dirname + '/src/client.js')
     .pipe(webpack(webpackConfig))
     .pipe(gulp.dest('build/'))
     util.log('whattt the fuck');
