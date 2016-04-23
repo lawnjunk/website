@@ -10,5 +10,5 @@ function about(){
 
 Path.map('/').to(index);
 Path.map('#about').to(about);
-
+Path.root('#/slash');
 Path.listen();

@@ -1,8 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Varela);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+@import url(https://fonts.googleapis.com/css?family=Knewave);
+
+
+
 body {
   background-color: #73bfff;
-  font-family: 'CalsaleTwo';
   padding: 20px;
+  font-family: 'Varela', sans-serif;
 }
+
+h1 {
+  font-family: 'Knewave', cursive;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 
 a {
   text-decoration: none;
@@ -32,6 +46,9 @@ footer li {
   background-color: #d3d3d3;
   width: 100%;
   min-width: 250px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 4px;
 }
 
@@ -59,9 +76,14 @@ footer li {
   /*flex-wrap: wrap;*/
 }
 
+.curses-header nav {
+  display: inline-block;
+  width: 100%;
+}
 
 .curses-header h1 {
   margin: 0px;
+  text-align: center;
 }
 
 .curses-header * {
@@ -71,9 +93,13 @@ footer li {
 .curses-header a {
   display: inline-block;
   background-color: #fff;
+  color: #000;
   padding: 4px;
   padding-left: 10px;
   width: calc(100% - 16px);
+  /*border-bottom: solid 2px black;*/
+  /*border-left: solid 2px black;*/
+  box-shadow: -4px -4px 0px 0px;
 }
 
 .curses-footer {
@@ -84,10 +110,11 @@ footer li {
 }
 
 @media (min-width: 600px) { 
-
   .curses-header h1 {
     width:20%;
     display: inline-block;
+    text-align: left;
+    margin-left: 20px;
     margin-right: 8px;
   }
   .curses-header a {
