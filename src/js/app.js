@@ -1,3 +1,6 @@
+var path = require(__dirname + '/vendor/path.js');
+var $ = require('jquery');
+
 function index(){
   $('.curses-content').text('hahahha');
   console.log('hahahahhah');
@@ -8,7 +11,6 @@ function about(){
   console.log('aboutahhah');
 }
 
-Path.map('/').to(index);
-Path.map('#about').to(about);
-Path.root('#/slash');
-Path.listen();
+path.map('/').to(index);
+path.map('#/slash').to(index);
+path.listen();
