@@ -1,17 +1,15 @@
-@font-face {
-  font-family: CalsaleTwo;
-  src: url('/fonts/CASTWO1.ttf') format('truetype');;
-}
-
-html {
-  height: 100%;
-  font-family: 'CalsaleTwo';
-}
-
 body {
   background-color: #73bfff;
-  height: 100%;
-  height: 100%;
+  font-family: 'CalsaleTwo';
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav li {
+  list-style-type: none;
 }
 
 footer {
@@ -24,107 +22,83 @@ footer ul {
   margin-right: auto;
 }
 
-footer ul li {
+footer li {
   margin-left: 20px;
   float: left;
   list-style-type: none;
 }
 
-a {
-  text-decoration: none;
-}
-
-.curses-window-container {
-  width: 60%;
-  margin-top: 5%;
-  margin-left: auto;
-  margin-right: auto;
+.curses-container {
   background-color: #d3d3d3;
-  box-shadow: 20px 20px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px 5px 5px 5px;
-}
-
-.curses-window {
-  width: auto;
-  height: 98%;
-  border: solid;
-  border-width: 5px;
-  border-top-color: #fff;
-  border-left-color: #fff;
-}
-
-.cw-header-container h1 {
-  font-size: 200%;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cw-main-container {
-  width: 95%;
-  height: auto;
-  border: solid;
-  border-width: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom-color: #fff;
-  border-right-color: #fff;
-  padding: 0px;
-}
-
-.cw-button-container {
-  margin-top: 10px;
-  border-top: solid;
-  border-width: 5px;
-  border-top-color: #fff;
-  padding-left: 5%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-
-.cw-main-container ul {
-  position: relative;
-  list-style-type: none;
   width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px;
-  font-size: 200%;
+  min-width: 250px;
+  padding: 4px;
 }
 
-.cw-main-container ul ul li {
-  font-size: 25%;
+.curses-inner-boarder {
+  border-top: solid 4px #fff;
+  border-left: solid 4px #fff;
+  border-bottom: solid 4px #000;
+  border-right: solid 4px #000;
 }
 
-.cw-main-container li:hover a {
-  background-color: #b3b3ff;
-  color: #fff;
+.content {
+  border-top: solid 4px #000;
+  border-left: solid 4px #000;
+  border-bottom: solid 4px #fff;
+  border-right: solid 4px #fff;
+  margin-left:4px;
+  margin-right:4px;
+}
+
+.curses-header  {
+  padding: 8px;
+
+  /*display: flex;*/
+  /*justify-content: space-around;*/
+  /*flex-wrap: wrap;*/
 }
 
 
-.cw-button-container button {
-  border: none;
-  font-size: 200%;
-  color: #000;
-  background-color: #d3d3d3; 
-  font-family: 'CalsaleTwo';
+.curses-header h1 {
+  margin: 0px;
 }
 
-.cw-button-container button:hover {
-  background-color: #b3b3ff;
-  font-size: 200%;
-  color: #fff;
+.curses-header * {
+  margin-top: 8px;
 }
 
-.red {
-  color: #f00;
+.curses-header a {
+  display: inline-block;
+  background-color: #fff;
+  padding: 4px;
+  padding-left: 10px;
+  width: calc(100% - 16px);
 }
 
-.selected a {
-  background-color: #b3b3ff;
-  color: #fff;
+.curses-footer {
+  border-top: solid 4px #fff;
+  margin: 0px;
+  margin-top: 4px;
+  padding: 10px;
+}
+
+@media (min-width: 600px) { 
+
+  .curses-header h1 {
+    width:20%;
+    display: inline-block;
+    margin-right: 8px;
+  }
+  .curses-header a {
+    width:20%;
+    margin-left:8px;
+    float: right;
+  }
+}
+
+@media (min-width: 850px){
+  .curses-header a {
+    width: 10%;
+  }
 }
