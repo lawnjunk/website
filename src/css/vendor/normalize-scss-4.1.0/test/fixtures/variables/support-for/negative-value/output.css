@@ -49,8 +49,6 @@ audio,
 canvas,
 progress,
 video {
-  display: inline-block;
-  /* 1 */
   vertical-align: baseline;
   /* 2 */ }
 
@@ -121,13 +119,6 @@ h1 {
   margin: 0.75em 0; }
 
 /**
-       * Address styling not present in IE 8/9.
-       */
-mark {
-  background: #ff0;
-  color: #000; }
-
-/**
      * Address inconsistent and variable font size in all browsers.
      */
 small {
@@ -165,12 +156,6 @@ svg:not(:root) {
 
 /* Grouping content
        ========================================================================== */
-/**
-       * Address margin not present in IE 8/9 and Safari.
-       */
-figure {
-  margin: 1.5em 40px; }
-
 /**
      * Address differences between Firefox and other browsers.
      */
@@ -362,8 +347,3 @@ table {
 td,
 th {
   padding: 0; }
-
-body {
-  background-color: #73bfff;
-  padding: 20px;
-  padding-right: 35px; }

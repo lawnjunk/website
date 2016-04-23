@@ -5,6 +5,7 @@
      *    without disabling user zoom.
      */
 html {
+  font-size: 100%;
   font-family: sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
@@ -51,6 +52,8 @@ progress,
 video {
   display: inline-block;
   /* 1 */
+  *display: inline;
+  *zoom: 1;
   vertical-align: baseline;
   /* 2 */ }
 
@@ -120,6 +123,26 @@ h1 {
   /* Set 1 unit of vertical rhythm on the top and bottom margins. */
   margin: 0.75em 0; }
 
+h2 {
+  font-size: 1.5em;
+  margin: 1em 0; }
+
+h3 {
+  font-size: 1.17em;
+  margin: 1.28205em 0; }
+
+h4 {
+  font-size: 1em;
+  margin: 1.5em 0; }
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.80723em 0; }
+
+h6 {
+  font-size: 0.67em;
+  margin: 2.23881em 0; }
+
 /**
        * Address styling not present in IE 8/9.
        */
@@ -155,7 +178,9 @@ sub {
        * Remove border when inside `a` element in IE 8/9/10.
        */
 img {
-  border: 0; }
+  border: 0;
+  /* Improve image quality when scaled in IE 7. */
+  -ms-interpolation-mode: bicubic; }
 
 /**
      * Correct overflow not hidden in IE 9/10/11.
@@ -165,6 +190,40 @@ svg:not(:root) {
 
 /* Grouping content
        ========================================================================== */
+/**
+       * Address margins set differently in IE 6/7.
+       */
+dl,
+menu,
+ol,
+ul {
+  margin: 1.5em 0; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+/**
+       * Address paddings set differently in IE 6/7.
+       */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px; }
+
+/**
+       * Correct list images handled incorrectly in IE 7.
+       */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+/**
+       * Set 1 unit of vertical rhythm on the top and bottom margin.
+       */
+blockquote {
+  margin: 1.5em 40px; }
+
 /**
        * Address margin not present in IE 8/9 and Safari.
        */
@@ -177,6 +236,13 @@ figure {
 hr {
   box-sizing: content-box;
   height: 0; }
+
+/**
+       * Set 1 unit of vertical rhythm on the top and bottom margin.
+       */
+p,
+pre {
+  margin: 1.5em 0; }
 
 /**
      * Contain overflow in all browsers.
@@ -201,6 +267,12 @@ samp {
      * styling of `select`, unless a `border` property is set.
      */
 /**
+       * Correct margin displayed oddly in IE 6/7.
+       */
+form {
+  margin: 0; }
+
+/**
      * 1. Correct color not being inherited.
      *    Known issue: affects color of disabled elements.
      * 2. Correct font properties not being inherited.
@@ -218,7 +290,11 @@ textarea {
   font: inherit;
   /* 2 */
   margin: 0;
-  /* 3 */ }
+  /* 3 */
+  *font-family: sans-serif;
+  /* 4 */
+  *vertical-align: middle;
+  /* 5 */ }
 
 /**
      * Address `overflow` set to `hidden` in IE 8/9/10/11.
@@ -252,7 +328,9 @@ input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
-  /* 3 */ }
+  /* 3 */
+  *overflow: visible;
+  /* 4 */ }
 
 /**
      * Re-set default cursor for disabled elements.
@@ -290,7 +368,11 @@ input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */ }
 
 /**
      * Fix the cursor style for Chrome's increment/decrement buttons. For certain
@@ -335,7 +417,9 @@ legend {
   border: 0;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */ }
 
 /**
      * Remove default vertical scrollbar in IE 8/9/10/11.
@@ -362,8 +446,3 @@ table {
 td,
 th {
   padding: 0; }
-
-body {
-  background-color: #73bfff;
-  padding: 20px;
-  padding-right: 35px; }

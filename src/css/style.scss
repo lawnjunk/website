@@ -1,0 +1,11 @@
+@import "vendor/normalize/_normalize.scss";
+@include normalize();
+
+$primary-blue : #73bfff;
+$primary-gray : #d3d3d3;
+
+body {
+  background-color: $primary-blue;
+  padding: 20px;
+  padding-right: 35px;
+}

@@ -5,6 +5,8 @@
      *    without disabling user zoom.
      */
 html {
+  font-size: 100%;
+  line-height: 1.5em;
   font-family: sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
@@ -117,8 +119,34 @@ dfn {
      */
 h1 {
   font-size: 2em;
+  line-height: 1.5em;
   /* Set 1 unit of vertical rhythm on the top and bottom margins. */
   margin: 0.75em 0; }
+
+h2 {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin: 1em 0; }
+
+h3 {
+  font-size: 1.17em;
+  line-height: 1.28205em;
+  margin: 1.28205em 0; }
+
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 1.5em 0; }
+
+h5 {
+  font-size: 0.83em;
+  line-height: 1.80723em;
+  margin: 1.80723em 0; }
+
+h6 {
+  font-size: 0.67em;
+  line-height: 2.23881em;
+  margin: 2.23881em 0; }
 
 /**
        * Address styling not present in IE 8/9.
@@ -166,10 +194,45 @@ svg:not(:root) {
 /* Grouping content
        ========================================================================== */
 /**
+       * Address margins set differently in IE 6/7.
+       */
+dl,
+menu,
+ol,
+ul {
+  margin: 1.5em 0; }
+
+/**
+       * Turn off margins on nested lists.
+       */
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin: 0; }
+
+dd {
+  margin: 0 0 0 3em; }
+
+/**
+       * Address paddings set differently in IE 6/7.
+       */
+menu,
+ol,
+ul {
+  padding: 0 0 0 3em; }
+
+/**
+       * Set 1 unit of vertical rhythm on the top and bottom margin.
+       */
+blockquote {
+  margin: 1.5em 3em; }
+
+/**
        * Address margin not present in IE 8/9 and Safari.
        */
 figure {
-  margin: 1.5em 40px; }
+  margin: 1.5em 3em; }
 
 /**
      * Address differences between Firefox and other browsers.
@@ -177,6 +240,13 @@ figure {
 hr {
   box-sizing: content-box;
   height: 0; }
+
+/**
+       * Set 1 unit of vertical rhythm on the top and bottom margin.
+       */
+p,
+pre {
+  margin: 1.5em 0; }
 
 /**
      * Contain overflow in all browsers.
@@ -362,8 +432,3 @@ table {
 td,
 th {
   padding: 0; }
-
-body {
-  background-color: #73bfff;
-  padding: 20px;
-  padding-right: 35px; }

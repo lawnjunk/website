@@ -1,0 +1,15 @@
+$primary-color: #d3d3d3;
+
+body {
+  background-color: $primary-color;
+}
+
+nav {
+  ul {
+    margin:0px;
+    padding: 4px;
+    list-style: none;
+  }
+
+  li { display: inline-block; };
+}

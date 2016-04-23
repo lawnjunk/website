@@ -149,51 +149,6 @@ sup {
 sub {
   bottom: -0.25em; }
 
-/* Embedded content
-       ========================================================================== */
-/**
-       * Remove border when inside `a` element in IE 8/9/10.
-       */
-img {
-  border: 0; }
-
-/**
-     * Correct overflow not hidden in IE 9/10/11.
-     */
-svg:not(:root) {
-  overflow: hidden; }
-
-/* Grouping content
-       ========================================================================== */
-/**
-       * Address margin not present in IE 8/9 and Safari.
-       */
-figure {
-  margin: 1.5em 40px; }
-
-/**
-     * Address differences between Firefox and other browsers.
-     */
-hr {
-  box-sizing: content-box;
-  height: 0; }
-
-/**
-     * Contain overflow in all browsers.
-     */
-pre {
-  overflow: auto; }
-
-/**
-     * Address odd `em`-unit font size rendering in all browsers.
-     */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em; }
-
 /* Forms
        ========================================================================== */
 /**
@@ -362,8 +317,3 @@ table {
 td,
 th {
   padding: 0; }
-
-body {
-  background-color: #73bfff;
-  padding: 20px;
-  padding-right: 35px; }

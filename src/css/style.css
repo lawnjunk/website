@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Varela);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+@import url(https://fonts.googleapis.com/css?family=Knewave);
+
+body {
+  background-color: #73bfff;
+  padding: 20px;
+  padding-right: 35px;
+  font-family: 'Varela', sans-serif;
+}
+
+h1 {
+  font-family: 'Knewave', cursive;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+footer ul {
+  width: 128px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer li {
+  margin-left: 20px;
+  float: left;
+  list-style-type: none;
+}
+
+.curses-container {
+  background-color: #d3d3d3;
+  width: 100%;
+  min-width: 250px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4px;
+  box-shadow: 10px 10px 0px 0px;
+}
+
+.curses-inner-boarder {
+  border-top: solid 4px #fff;
+  border-left: solid 4px #fff;
+  border-bottom: solid 4px #000;
+  border-right: solid 4px #000;
+}
+
+.content {
+  border-top: solid 4px #000;
+  border-left: solid 4px #000;
+  border-bottom: solid 4px #fff;
+  border-right: solid 4px #fff;
+  margin-left:4px;
+  margin-right:4px;
+}
+
+.curses-header  {
+  padding: 8px;
+
+  /*display: flex;*/
+  /*justify-content: space-around;*/
+  /*flex-wrap: wrap;*/
+}
+
+.curses-header nav {
+  display: inline-block;
+  width: 100%;
+}
+
+.curses-header h1 {
+  margin: 0px;
+  text-align: center;
+}
+
+.curses-header * {
+  margin-top: 8px;
+}
+
+.curses-header a {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  padding: 4px;
+  padding-left: 10px;
+  width: calc(100% - 16px);
+  /*border-bottom: solid 4px black;*/
+  /*border-left: solid 4px black;*/
+  box-shadow: 4px -4px 0px 0px;
+}
+
+.curses-header a:hover{
+  color: #73bfff;
+}
+
+.curses-header a:active{
+  color: #fff;
+  background-color: #000;
+}
+
+.curses-footer {
+  border-top: solid 4px #fff;
+  margin: 0px;
+  margin-top: 4px;
+  padding: 10px;
+}
+
+@media (min-width: 600px) { 
+  .curses-header h1 {
+    width:20%;
+    display: inline-block;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 8px;
+  }
+  .curses-header a {
+    width:15%;
+    margin-left:8px;
+    float: right;
+  }
+}
+
+@media (min-width: 850px){
+  .curses-header a {
+    width: 20%;
+  }
+}
