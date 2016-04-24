@@ -1,0 +1,15 @@
+@import "../theme/_colors";
+
+.curses-container {
+  background-color: $color-secondary-bg;
+  box-shadow: 10px 10px 0px 0px;
+}
+
+.curses-inner-border {
+  border-top: solid 4px $color-secondary-fg;
+  border-left: solid 4px $color-secondary-fg;
+  border-right: solid 4px $color-primary-fg;
+  border-bottom: solid 4px $color-primary-fg;
+  padding: 4px;
+}
+

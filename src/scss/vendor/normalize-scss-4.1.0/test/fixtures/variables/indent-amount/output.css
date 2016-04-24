@@ -4,10 +4,9 @@
      * 2. Prevent iOS and IE text size adjust after device orientation change,
      *    without disabling user zoom.
      */
-@import url(https://fonts.googleapis.com/css?family=Knewave);
-@import url(https://fonts.googleapis.com/css?family=Varela);
-@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 html {
+  font-size: 100%;
+  line-height: 1.5em;
   font-family: sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
@@ -120,8 +119,34 @@ dfn {
      */
 h1 {
   font-size: 2em;
+  line-height: 1.5em;
   /* Set 1 unit of vertical rhythm on the top and bottom margins. */
   margin: 0.75em 0; }
+
+h2 {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin: 1em 0; }
+
+h3 {
+  font-size: 1.17em;
+  line-height: 1.28205em;
+  margin: 1.28205em 0; }
+
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 1.5em 0; }
+
+h5 {
+  font-size: 0.83em;
+  line-height: 1.80723em;
+  margin: 1.80723em 0; }
+
+h6 {
+  font-size: 0.67em;
+  line-height: 2.23881em;
+  margin: 2.23881em 0; }
 
 /**
        * Address styling not present in IE 8/9.
@@ -169,10 +194,45 @@ svg:not(:root) {
 /* Grouping content
        ========================================================================== */
 /**
+       * Address margins set differently in IE 6/7.
+       */
+dl,
+menu,
+ol,
+ul {
+  margin: 1.5em 0; }
+
+/**
+       * Turn off margins on nested lists.
+       */
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin: 0; }
+
+dd {
+  margin: 0 0 0 3em; }
+
+/**
+       * Address paddings set differently in IE 6/7.
+       */
+menu,
+ol,
+ul {
+  padding: 0 0 0 3em; }
+
+/**
+       * Set 1 unit of vertical rhythm on the top and bottom margin.
+       */
+blockquote {
+  margin: 1.5em 3em; }
+
+/**
        * Address margin not present in IE 8/9 and Safari.
        */
 figure {
-  margin: 1.5em 40px; }
+  margin: 1.5em 3em; }
 
 /**
      * Address differences between Firefox and other browsers.
@@ -180,6 +240,13 @@ figure {
 hr {
   box-sizing: content-box;
   height: 0; }
+
+/**
+       * Set 1 unit of vertical rhythm on the top and bottom margin.
+       */
+p,
+pre {
+  margin: 1.5em 0; }
 
 /**
      * Contain overflow in all browsers.
@@ -365,117 +432,3 @@ table {
 td,
 th {
   padding: 0; }
-
-/*blue */
-/*grey*/
-/*black*/
-/*white*/
-/*pink*/
-/*font familys*/
-body {
-  background-color: #73bfff;
-  font-family: "Varela", sans-serif;
-  padding: 20px;
-  padding-right: 35px; }
-
-header, footer, main {
-  width: 100%; }
-
-a {
-  text-decoration: none;
-  color: #ff7a7a; }
-
-a:hover {
-  color: #000; }
-
-nav ul {
-  margin: 0px;
-  padding: 0px; }
-
-nav li {
-  display: inline-block;
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-  width: 100%; }
-
-.curses-container {
-  width: 100%;
-  min-width: 300px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 4px; }
-
-.curses-header {
-  height: 170px; }
-
-@media (min-width: 600px) {
-  .curses-header {
-    height: 50px; } }
-
-/*blue */
-/*grey*/
-/*black*/
-/*white*/
-/*pink*/
-.curses-container {
-  background-color: #d3d3d3;
-  box-shadow: 10px 10px 0px 0px; }
-
-.curses-inner-border {
-  border-top: solid 4px #fff;
-  border-left: solid 4px #fff;
-  border-right: solid 4px #000;
-  border-bottom: solid 4px #000;
-  padding: 4px; }
-
-.logo {
-  /*font-family: 'Knewave', cursive;*/
-  font-family: "Knewave", cursive;
-  text-align: center;
-  width: 100%;
-  margin: 0px;
-  margin-bottom: 10px;
-  float: left; }
-
-@media (min-width: 600px) {
-  .logo {
-    text-align: right;
-    width: 130px;
-    margin-left: 10px; } }
-
-.primary-nav {
-  display: inline-block;
-  width: 100%;
-  float: right; }
-  .primary-nav a {
-    display: inline-block;
-    color: #000;
-    background-color: #fff;
-    box-shadow: -4px -4px 0px 0px;
-    padding: 4px;
-    padding-left: 10px;
-    width: 100%; }
-  .primary-nav a:hover {
-    color: #ff7a7a; }
-  .primary-nav a:active {
-    color: #fff;
-    background-color: #000; }
-  .primary-nav li {
-    display: inline-block;
-    width: calc(100% - 32px);
-    margin: 8px;
-    margin-top: 2px; }
-
-@media (min-width: 600px) {
-  .primary-nav {
-    width: calc(100% - 150px); }
-    .primary-nav ul {
-      margin: 8px;
-      margin-top: 12px; }
-    .primary-nav li {
-      width: 25%;
-      margin: 10px;
-      margin-top: 2px;
-      float: right; } }

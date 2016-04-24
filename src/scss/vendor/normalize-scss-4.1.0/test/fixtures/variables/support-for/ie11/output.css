@@ -4,9 +4,6 @@
      * 2. Prevent iOS and IE text size adjust after device orientation change,
      *    without disabling user zoom.
      */
-@import url(https://fonts.googleapis.com/css?family=Knewave);
-@import url(https://fonts.googleapis.com/css?family=Varela);
-@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -52,8 +49,6 @@ audio,
 canvas,
 progress,
 video {
-  display: inline-block;
-  /* 1 */
   vertical-align: baseline;
   /* 2 */ }
 
@@ -66,12 +61,6 @@ audio:not([controls]) {
   height: 0; }
 
 /**
-       * Address `[hidden]` styling not present in IE 8/9/10.
-       */
-[hidden] {
-  display: none; }
-
-/**
      * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
      */
 template {
@@ -79,12 +68,6 @@ template {
 
 /* Links
        ========================================================================== */
-/**
-       * Remove the gray background color from active links in IE 10.
-       */
-a {
-  background-color: transparent; }
-
 /**
      * Improve readability of focused elements when they are also in an
      * active/hover state.
@@ -124,13 +107,6 @@ h1 {
   margin: 0.75em 0; }
 
 /**
-       * Address styling not present in IE 8/9.
-       */
-mark {
-  background: #ff0;
-  color: #000; }
-
-/**
      * Address inconsistent and variable font size in all browsers.
      */
 small {
@@ -155,12 +131,6 @@ sub {
 /* Embedded content
        ========================================================================== */
 /**
-       * Remove border when inside `a` element in IE 8/9/10.
-       */
-img {
-  border: 0; }
-
-/**
      * Correct overflow not hidden in IE 9/10/11.
      */
 svg:not(:root) {
@@ -168,12 +138,6 @@ svg:not(:root) {
 
 /* Grouping content
        ========================================================================== */
-/**
-       * Address margin not present in IE 8/9 and Safari.
-       */
-figure {
-  margin: 1.5em 40px; }
-
 /**
      * Address differences between Firefox and other browsers.
      */
@@ -280,22 +244,6 @@ input {
   line-height: normal; }
 
 /**
-       * It's recommended that you don't attempt to style these elements.
-       * Firefox's implementation doesn't respect box-sizing, padding, or width.
-       *
-       * 1. Address box sizing set to `content-box` in IE 8/9/10.
-       * 2. Remove excess padding in IE 8/9/10.
-       * 3. Remove excess padding in IE 7.
-       *    Known issue: excess padding remains in IE 6.
-       */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/**
      * Fix the cursor style for Chrome's increment/decrement buttons. For certain
      * `font-size` values of the `input`, it causes the cursor style of the
      * decrement button to change from `default` to `text`.
@@ -365,117 +313,3 @@ table {
 td,
 th {
   padding: 0; }
-
-/*blue */
-/*grey*/
-/*black*/
-/*white*/
-/*pink*/
-/*font familys*/
-body {
-  background-color: #73bfff;
-  font-family: "Varela", sans-serif;
-  padding: 20px;
-  padding-right: 35px; }
-
-header, footer, main {
-  width: 100%; }
-
-a {
-  text-decoration: none;
-  color: #ff7a7a; }
-
-a:hover {
-  color: #000; }
-
-nav ul {
-  margin: 0px;
-  padding: 0px; }
-
-nav li {
-  display: inline-block;
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-  width: 100%; }
-
-.curses-container {
-  width: 100%;
-  min-width: 300px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 4px; }
-
-.curses-header {
-  height: 170px; }
-
-@media (min-width: 600px) {
-  .curses-header {
-    height: 50px; } }
-
-/*blue */
-/*grey*/
-/*black*/
-/*white*/
-/*pink*/
-.curses-container {
-  background-color: #d3d3d3;
-  box-shadow: 10px 10px 0px 0px; }
-
-.curses-inner-border {
-  border-top: solid 4px #fff;
-  border-left: solid 4px #fff;
-  border-right: solid 4px #000;
-  border-bottom: solid 4px #000;
-  padding: 4px; }
-
-.logo {
-  /*font-family: 'Knewave', cursive;*/
-  font-family: "Knewave", cursive;
-  text-align: center;
-  width: 100%;
-  margin: 0px;
-  margin-bottom: 10px;
-  float: left; }
-
-@media (min-width: 600px) {
-  .logo {
-    text-align: right;
-    width: 130px;
-    margin-left: 10px; } }
-
-.primary-nav {
-  display: inline-block;
-  width: 100%;
-  float: right; }
-  .primary-nav a {
-    display: inline-block;
-    color: #000;
-    background-color: #fff;
-    box-shadow: -4px -4px 0px 0px;
-    padding: 4px;
-    padding-left: 10px;
-    width: 100%; }
-  .primary-nav a:hover {
-    color: #ff7a7a; }
-  .primary-nav a:active {
-    color: #fff;
-    background-color: #000; }
-  .primary-nav li {
-    display: inline-block;
-    width: calc(100% - 32px);
-    margin: 8px;
-    margin-top: 2px; }
-
-@media (min-width: 600px) {
-  .primary-nav {
-    width: calc(100% - 150px); }
-    .primary-nav ul {
-      margin: 8px;
-      margin-top: 12px; }
-    .primary-nav li {
-      width: 25%;
-      margin: 10px;
-      margin-top: 2px;
-      float: right; } }
