@@ -1,16 +1,23 @@
-var path = require(__dirname + '/vendor/path.js');
-var $ = require('jquery');
+'use strict';
+const director = require('director');
+const $ = require('jquery');
 
-function index(){
+function slash(){
   $('.curses-content').text('hahahha');
   console.log('hahahahhah');
 }
 
-function about(){
+function tutorials(){
   $('.curses-content').text('aboutha');
   console.log('aboutahhah');
 }
 
-path.map('/').to(index);
-path.map('#/slash').to(index);
-path.listen();
+const routes = {
+  '/slash': slash,
+  '/tutorials': tutorials
+};
+
+const router = director.Router(routes);
+router.init();
+
+

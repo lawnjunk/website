@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/slugbyte/slugbyte.github.io#readme",
   "devDependencies": {
+    "director": "^1.2.8",
     "jquery": "^2.2.3"
   }
 }
