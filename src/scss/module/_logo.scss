@@ -1,0 +1,17 @@
+.logo {
+  /*font-family: 'Knewave', cursive;*/
+  font-family: $font-logo;
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+@media (min-width: 600px){
+  .logo{
+    text-align: right;
+    width: 130px;
+    margin-left: 10px;
+  }
+}

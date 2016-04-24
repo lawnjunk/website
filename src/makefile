@@ -11,7 +11,7 @@ webpack:
 
 sassc:
 	mkdir -p ../css
-	sassc css/style.scss > ../css/style.css
+	sassc scss/style.scss > ../css/style.css
 
 clean:
 	rm -rf ../img
@@ -20,4 +20,4 @@ clean:
 	rm -f ../*.html
 
 watch:
-	find ./js -name '*.js' | entr -rc make
+	./script/watch_files.sh | entr -rc make
