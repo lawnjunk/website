@@ -1,0 +1,12 @@
+{
+  "name": "slugbyte.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:slugbyte/slugbyte.github.io.git",
+  "author": "Duncan Marsh <dwolfm@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-router-dom": "^4.1.2"
+  }
+}

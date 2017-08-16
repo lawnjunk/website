@@ -1,2 +1,0 @@
-Duncan Marsh -- slugbyte
-========================
