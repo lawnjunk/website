@@ -1,0 +1,53 @@
+@import "vars"
+
+.landing
+  .featured
+    height: 15em
+    padding: $pad * 2
+    margin-bottom: $pad
+    background: $color-blue
+
+  .spotlight
+    height: 10em
+    margin-bottom: 0.5em
+
+    .one,.two,.three
+      float: left
+      width: calc((100%  - 1em) / 3)
+      height: 100%
+      padding: $pad
+      main
+        height: 100%
+
+    .one
+      background: #eee
+      margin-right: $pad
+      main
+        border-bottom: 2px solid white
+        border-top: 2px solid white
+        border-right: 2px dashed white 
+        border-left: 2px solid white
+
+    .two
+      background: $color-lightgrey
+      margin-right: $pad
+      border-radius: 0 0 1em 0 
+
+    .three
+      background: #cab
+      box-shadow: 1em 1em $color-black
+
+  .game
+    height: 25em
+    background: $color-darkgrey
+    margin-bottom: $pad
+
+  .gallery
+    height: 20em
+    width: 60%
+    margin-bottom: $pad * 3
+    background: $color-pink
+    box-shadow: -1em 1em $color-black
+
+
+

@@ -3,7 +3,6 @@
 require('dotenv').config()
 const production = process.env.NODE_ENV === 'production'
 
-
 const {optimize, DefinePlugin, EnvironmentPlugin} = require('webpack')
 const HTMLPlugin = require('html-webpack-plugin')
 const CleanPlugin = require('clean-webpack-plugin')
@@ -13,23 +12,13 @@ const ExtractPlugin = require('extract-text-webpack-plugin')
 let plugins = [
   new EnvironmentPlugin(['NODE_ENV']),
   new ExtractPlugin('bundle-[hash].css'),
-  new HTMLPlugin({
-    template: `${__dirname}/src/index.html`, 
-    chunks: ['main'],
-  }),
-  new HTMLPlugin({
-    filename: '404.html',
-    chunks: ['fourOhFour'],
-    template: `${__dirname}/src/404.html`,
+  new HTMLPlugin({ 
+    template: `${__dirname}/src/index.html`,
+    favicon: `${__dirname}/src/asset/favicon.ico`,
   }),
   new DefinePlugin({
     __DEBUG__: JSON.stringify(!production),
     __API_URL__: JSON.stringify(process.env.API_URL),
-  }),
-  new optimize.CommonsChunkPlugin({
-    name: 'fourOhFour',
-    filename: '404.[hash].js',
-    minChunks: Infinity,
   }),
 ]
 
@@ -38,10 +27,7 @@ if (production)
 
 module.exports = {
   plugins,
-  entry: {
-    main: `${__dirname}/src/main.js`,
-    fourOhFour: `${__dirname}/src/404.js`,
-  },
+  entry: `${__dirname}/src/main.js`,
   devServer: { 
     historyApiFallback: true,
   },
@@ -59,7 +45,7 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
-        test: /\.scss$/,
+        test: /\.sass$/,
         loader: ExtractPlugin.extract({
           use: [
             'css-loader',
