@@ -16,6 +16,11 @@ let plugins = [
     template: `${__dirname}/src/index.html`,
     favicon: `${__dirname}/src/asset/favicon.ico`,
   }),
+  new HTMLPlugin({ 
+    filename: '404.html',
+    template: `${__dirname}/src/index.html`,
+    favicon: `${__dirname}/src/asset/favicon.ico`,
+  }),
   new DefinePlugin({
     __DEBUG__: JSON.stringify(!production),
     __API_URL__: JSON.stringify(process.env.API_URL),

@@ -12,11 +12,12 @@ class App extends React.Component {
       <div className='app'>
         <BrowserRouter>
           <div>
-            <Route exact path='/' component={() => <Redirect to='/slash' />} />
             <Route exact path='/slash' component={Page(Landing )} />
             <Route exact path='/article' component={Page(() => <h1> article </h1>)} />
             <Route exact path='/project' component={Page(() => <h1> project </h1>)} />
             <Route exact path='/contact' component={Page(() => <h1> contact </h1>)} />
+            <Route exact path='/' component={() => <Redirect to='/slash' />} />
+            <Route path='/404.html' component={() => <Redirect to='/slash' />} />
           </div>
         </BrowserRouter>
       </div>

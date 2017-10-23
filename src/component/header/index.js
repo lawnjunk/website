@@ -9,6 +9,7 @@ const NavLink = ({to, location}) => {
 
 class Header extends React.Component {
   render(){
+    console.log(this.props.location)
     return (
       <header className='header'>
         <main>
