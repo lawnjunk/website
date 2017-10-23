@@ -1,0 +1,18 @@
+{
+  "title": "slugtina",
+  "year": 2017,
+  "month": 3,
+  "description": "a javascript paint app",
+  "views": 0,
+  "ups": 0,
+  "url": "https://slugbyte.github.io/slugtina",
+  "github": "https://github.com/slugbyte/slugtina",
+  "keywords": [
+    "drawing", 
+    "paint",
+    "javascript",
+    "canvas",
+    "2d",
+    "redux"
+  ]
+}
