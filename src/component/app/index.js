@@ -24,6 +24,7 @@ class App extends React.Component {
             <Route path='/project' component={Page(() => <h1> project </h1>)} />
             <Route path='/contact' component={Page(() => <h1> contact </h1>)} />
             <Route path='/404.html' component={() => <Redirect to='/slash' />} />
+            <Route exact path='/' component={() => <Redirect to='/slash' />} />
           </div>
         </BrowserRouter>
       </div>
