@@ -70,6 +70,10 @@ module.exports = {
         loader: 'raw-loader',
       },
       {
+        test: /\.md$/,
+        loader: 'raw-loader',
+      },
+      {
         test: /\.(woff|woff2|ttf|eot).*/,
         exclude: /\.icon.svg/,
         use: [
